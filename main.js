@@ -8,3 +8,6 @@ const port = process.env.PORT || "8000";
 app.get("/", (req, res) => {
     res.status(200).send("HELLO WORLD!");
 });
+app.listen(port, () => {
+    console.log(`listening to requests on http://localhost:${port}`)
+});
